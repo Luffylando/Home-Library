@@ -2,32 +2,26 @@
 {% block main %}
 <h2 id="naslov">Rezultat pretrage:</h2><br>
 
-
         {% for knjiga in knjige %}
-        
-       
-
-
-
 		
 		<a href="{{ BASE }}pogledaj/knjiga/{{ knjiga.knjige_id }}" id="href-1"> 
-    <div class="container">
+            <div class="container">
 
-    <div class="row">
-            <h5>{{ knjiga.knjige_id }}. &nbsp;</h5>
-            <h5>"{{ knjiga.naslov }}" -&nbsp;</h5>
-            <h5>{{ knjiga.autor }}&nbsp;</h5>
-            <h5>({{ knjiga.zanr }})</h5>
-        </div>
-    </div>
-</a>
+            <div class="row">
+                    <h5>{{ knjiga.knjige_id }}. &nbsp;</h5>
+                    <h5>"{{ knjiga.naslov }}" -&nbsp;</h5>
+                    <h5>{{ knjiga.autor }}&nbsp;</h5>
+                    <h5>({{ knjiga.zanr }})</h5>
+                </div>
+            </div>
+        </a>
 
 			 
         {% endfor %}
         
         {% if knjige is empty %}
 
-        <h4 align="center">Nema rezultata pretrage koji odgovara trazenoj reci: "{{ keyword }}"</h4>
+         <h4 align="center">Nema rezultata pretrage koji odgovara trazenoj reci: "{{ keyword }}"</h4>
 
         {% endif %}
 

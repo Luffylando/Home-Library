@@ -54,7 +54,7 @@
 
 	
 
-		header("Location: http://localhost/1908/pogledaj");
+		$this->redirect(\Configuration::BASE . 'pogledaj');
 
 		
 	}

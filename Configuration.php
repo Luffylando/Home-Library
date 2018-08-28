@@ -2,7 +2,7 @@
 	final class Configuration
 	{
 
-		const BASE = 'http://localhost/1908/';
+		const BASE = 'http://localhost/Home-Library/';
 
 		const DB_HOST = '127.0.0.1';
 		const DB_USER = 'baza';

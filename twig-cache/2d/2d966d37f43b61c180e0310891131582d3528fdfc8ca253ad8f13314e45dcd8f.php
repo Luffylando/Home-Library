@@ -114,6 +114,7 @@ class __TwigTemplate_035e1f61db2f604dd1672a2dc5d256f4dd7467cbe6ded1b3c1509bcd9fc
     </div>
 </div>
 </form>
+<br><br><br>
 
 
 ";
@@ -136,6 +137,6 @@ class __TwigTemplate_035e1f61db2f604dd1672a2dc5d256f4dd7467cbe6ded1b3c1509bcd9fc
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "Dodaj/index.html", "/var/www/html/1908/Views/Dodaj/index.html");
+        return new Twig_Source("", "Dodaj/index.html", "/var/www/html/Home-Library/Views/Dodaj/index.html");
     }
 }

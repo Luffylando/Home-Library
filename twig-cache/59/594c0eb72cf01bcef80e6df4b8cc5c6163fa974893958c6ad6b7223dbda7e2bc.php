@@ -38,6 +38,7 @@ class __TwigTemplate_cdfa0046c07e46b355c68f62323489d87686b79b4c90375521e377e5328
         // line 8
         echo twig_escape_filter($this->env, ($context["BASE"] ?? null), "html", null, true);
         echo "assets/js/bootstrap.js\">
+        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, user-scalable=no\">
 
     </head>
 
@@ -51,19 +52,19 @@ class __TwigTemplate_cdfa0046c07e46b355c68f62323489d87686b79b4c90375521e377e5328
                     <ul>
                        
                         <a class=\"navbar-brand\" href=\"";
-        // line 21
+        // line 22
         echo twig_escape_filter($this->env, ($context["BASE"] ?? null), "html", null, true);
         echo "\">Biblioteka</a>  
                         
                         ";
-        // line 23
+        // line 24
         if ((twig_get_attribute($this->env, $this->source, ($context["korisnici"] ?? null), "korisnicko_ime", array()) != "")) {
-            // line 24
+            // line 25
             echo "                        <a class=\"navbar-brand\" href=\"";
             echo twig_escape_filter($this->env, ($context["BASE"] ?? null), "html", null, true);
             echo "dodaj\">Dodaj Knjigu</a>                  
                         <a class=\"navbar-brand\" href=\"";
-            // line 25
+            // line 26
             echo twig_escape_filter($this->env, ($context["BASE"] ?? null), "html", null, true);
             echo "pogledaj\">Pogledaj sve svoje knjige</a>                  
 
@@ -71,53 +72,53 @@ class __TwigTemplate_cdfa0046c07e46b355c68f62323489d87686b79b4c90375521e377e5328
              
                     ";
         } else {
-            // line 30
+            // line 31
             echo "
                     ";
         }
-        // line 32
+        // line 33
         echo "                </ul>
 
 
                 <ul class=\"float-right\">
 
                     ";
-        // line 37
+        // line 38
         if ((twig_get_attribute($this->env, $this->source, ($context["korisnici"] ?? null), "korisnicko_ime", array()) != "")) {
-            // line 38
+            // line 39
             echo "                       
                                        
                         <a class=\"navbar-brand\" style=\"margin-left: 180%;\" href=\"";
-            // line 40
+            // line 41
             echo twig_escape_filter($this->env, ($context["BASE"] ?? null), "html", null, true);
             echo "auth/logout\">Izloguj se!</a> 
                     ";
         } else {
-            // line 42
+            // line 43
             echo "                    <div>
                     <a class=\"navbar-brand\" href=\"";
-            // line 43
+            // line 44
             echo twig_escape_filter($this->env, ($context["BASE"] ?? null), "html", null, true);
             echo "auth/log\">Logovanje</a>    
                     <a class=\"navbar-brand\" href=\"";
-            // line 44
+            // line 45
             echo twig_escape_filter($this->env, ($context["BASE"] ?? null), "html", null, true);
             echo "auth/reg\">Registracija</a> 
                         </div>
                     ";
         }
-        // line 47
+        // line 48
         echo "
                     
                 </ul>
 
                 ";
-        // line 51
+        // line 52
         if ((twig_get_attribute($this->env, $this->source, ($context["korisnici"] ?? null), "korisnicko_ime", array()) != "")) {
-            // line 52
+            // line 53
             echo "
                 <form class=\"form-inline\" method=\"post\" action=\"";
-            // line 53
+            // line 54
             echo twig_escape_filter($this->env, ($context["BASE"] ?? null), "html", null, true);
             echo "knjige/pretraga\">
                     <input class=\"form-control mr-sm-2\" type=\"search\" name=\"pretraga\" minlength=\"2\" placeholder=\"Pretraga\" aria-label=\"Search\">
@@ -126,11 +127,11 @@ class __TwigTemplate_cdfa0046c07e46b355c68f62323489d87686b79b4c90375521e377e5328
 
                   ";
         } else {
-            // line 59
+            // line 60
             echo "
                   ";
         }
-        // line 61
+        // line 62
         echo "
                 </div>
                   
@@ -140,9 +141,9 @@ class __TwigTemplate_cdfa0046c07e46b355c68f62323489d87686b79b4c90375521e377e5328
 
 
         ";
-        // line 69
+        // line 70
         $this->displayBlock('main', $context, $blocks);
-        // line 74
+        // line 75
         echo "
         <footer>
 
@@ -154,10 +155,10 @@ class __TwigTemplate_cdfa0046c07e46b355c68f62323489d87686b79b4c90375521e377e5328
 </html>";
     }
 
-    // line 69
+    // line 70
     public function block_main($context, array $blocks = array())
     {
-        // line 70
+        // line 71
         echo "
         <main>
        </main>
@@ -176,11 +177,11 @@ class __TwigTemplate_cdfa0046c07e46b355c68f62323489d87686b79b4c90375521e377e5328
 
     public function getDebugInfo()
     {
-        return array (  161 => 70,  158 => 69,  146 => 74,  144 => 69,  134 => 61,  130 => 59,  121 => 53,  118 => 52,  116 => 51,  110 => 47,  104 => 44,  100 => 43,  97 => 42,  92 => 40,  88 => 38,  86 => 37,  79 => 32,  75 => 30,  67 => 25,  62 => 24,  60 => 23,  55 => 21,  39 => 8,  35 => 7,  31 => 6,  24 => 1,);
+        return array (  162 => 71,  159 => 70,  147 => 75,  145 => 70,  135 => 62,  131 => 60,  122 => 54,  119 => 53,  117 => 52,  111 => 48,  105 => 45,  101 => 44,  98 => 43,  93 => 41,  89 => 39,  87 => 38,  80 => 33,  76 => 31,  68 => 26,  63 => 25,  61 => 24,  56 => 22,  39 => 8,  35 => 7,  31 => 6,  24 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "_global/main.html", "/var/www/html/1908/Views/_global/main.html");
+        return new Twig_Source("", "_global/main.html", "/var/www/html/Home-Library/Views/_global/main.html");
     }
 }

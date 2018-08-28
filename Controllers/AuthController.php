@@ -2,7 +2,6 @@
 	namespace App\Controllers;
 
 	use App\Core\Controller;
-   
     use App\Models\KorisniciModel;
     use App\Models\KnjigeModel;
    
@@ -33,7 +32,7 @@
 
             $napraviUserTabelu = $korisniciModel->createUserTable($ime);
 
-            header("Location: http://localhost/1908/auth/log");
+            $this->redirect(\Configuration::BASE . 'auth/log');
 
     }
 
@@ -62,8 +61,9 @@
             
             $this->getSession()->put('korisnici_id', $korisnici->korisnici_id);
             $this->getSession()->save();    
-            header('Location: http://localhost/1908');
 
+            $this->redirect(\Configuration::BASE);
+               
          }
     }
 
@@ -71,7 +71,7 @@
         $this->getSession()->remove('korisnici_id');
         $this->getSession()->save();
         
-        header("Location: http://localhost/1908");
+             $this->redirect(\Configuration::BASE);
     }
 }
 

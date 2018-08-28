@@ -46,6 +46,13 @@
 			return $this->data;
 		}
 
+		final protected function redirect(string $path, int $code = 303) {
+				ob_start();
+				header('Location: ' . $path, true, $code);
+				exit();
+		
+		}
+
 		public function izvuciIzSesije() {
             $korisnici_id = intval($this->getSession()->get('korisnici_id'));
             $korisniciModel = new \App\Models\KorisniciModel($this->getDbConnection());
