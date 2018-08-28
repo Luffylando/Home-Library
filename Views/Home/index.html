@@ -1,0 +1,26 @@
+{% extends '_global/main.html' %}
+
+
+{% block main%}
+
+<div class="mx-auto">
+
+  
+ {% if korisnici.korisnicko_ime != '' %}
+
+
+<h2>Zdravo {{ korisnici.korisnicko_ime }}. Dobrodosao na nas sajt.</h2>
+
+
+
+{% else %}
+
+<h2>Dobrodosli na sajt. <br>
+Morate biti registrovani i ulogovani kako biste mogli <br>
+ da napravite svoju istoriju citanja.</h2>
+
+{% endif %}
+    
+</div>
+
+{% endblock %}

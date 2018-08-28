@@ -1,0 +1,105 @@
+{% extends '_global/main.html' %}
+
+
+{% block main%}
+<h2>Izmeni Podatke</h2>
+<form method="post" enctype="multipart/form-data">
+<div class="container">
+
+<div class="col-md-8 mx-auto">
+    <div class="form-group row">
+         <label for="naslov" class="col-sm-2 col-form-label">Naslov:</label>
+             <div class="col-sm-10">
+                <input type="text" class="form-control" value="{{ knjiga.naslov}}" name="naslov" id="naslov" placeholder="Naslov">
+            </div>
+    </div>
+
+
+    <div class="form-group row">
+          <label for="autor" class="col-sm-2 col-form-label">Autor:</label>
+            <div class="col-sm-10">
+                 <input type="text" class="form-control" id="autor" value="{{ knjiga.autor}}" name="autor" placeholder="Autor">
+            </div>
+    </div>
+
+    
+              
+            <input type="hidden" id="id" value="{{ knjiga.knjige_id}}" name="id">
+            
+      
+
+    <div class="form-group row">
+         <label for="zanr" class="col-sm-2 col-form-label">Zanr:</label>
+             <div class="col-sm-10">
+                 <select name="zanr" id="zanr">
+
+                 <option value="{{ knjiga.zanr}}" selected="selected">
+                                {{ knjiga.zanr }}
+                 </option>
+                    
+                     <option value="Roman">Roman</option>
+                     <option value="Istorija">Istorija</option>
+                     <option value="Nauka">Nauka</option>
+                     <option value="Drama">Drama</option>
+                     <option value="Filozofija">Filozofija</option>
+                     <option value="Fantazija">Fanstazija</option>
+
+
+                 </select>
+            </div>
+    </div>
+
+
+    <div class="form-group row">
+            <label for="status" class="col-sm-2 col-form-label">Status:</label>
+                <div class="col-sm-10">
+                    <select name="status" id="status">
+   
+                       
+                            <option value="{{ knjiga.status}}" selected>
+                                    {{ knjiga.status }}
+                     </option>
+                        <option value="Procitano">Procitano</option>
+
+                        <option value="Trenutno se cita">Trenutno se cita</option>
+                        <option value="Neprocitano">Neprocitano</option>
+                        <option value="Napusteno">Napusteno</option>  
+   
+                    </select>
+               </div>
+       </div>
+
+    <div class="form-group row">
+      <label for="citat" class="col-sm-2 col-form-label">Citat:</label>
+             <div class="col-sm-10">
+              <textarea name="citat" id="citat" cols="30" maxlength="250" rows="5" placeholder="(max 250 characters)">{{ knjiga.citat}}</textarea>
+            </div>
+    </div>
+
+    <div class="form-group row">
+            <label for="komentar" class="col-sm-2 col-form-label">Komentar:</label>
+                   <div class="col-sm-10">
+                    <textarea name="komentar" id="komentar" maxlength="100" cols="30" rows="5" placeholder="(max 100 characters)">{{ knjiga.komentar}}</textarea>
+                  </div>
+          </div>
+
+        
+    <div class="form-group row">
+        <label for="slika" class="col-sm-2 col-form-label">Slika:</label>
+        <div class="col-sm-10">
+            <img src="{{knjiga.slika}}" alt="img" width="180" height="200">
+          <input type="file" class="form-control" id="slika" value="{{ knjiga.slika}}" name="slika" placeholder="Slika">
+        </div>
+      </div>
+
+      <div class="form-group">
+           
+            <button class="btn btn-sm btn-secondary float-right">Potvrdi Izmeni</button>
+          </div>
+
+    </div>
+</div>
+</form>
+
+
+{% endblock %}

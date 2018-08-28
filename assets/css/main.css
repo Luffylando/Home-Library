@@ -1,0 +1,104 @@
+#navbar-main{
+
+    color:white;
+    height: 60px;
+    background: rgba(0,0,0,0.5);
+
+}
+
+body{
+
+    background: linear-gradient(rgba(0, 0, 0, 0.1),
+                                rgba(0, 0, 0, 0.1)),
+                                 url("http://localhost/1908/assets/img/2.jpeg");
+
+    padding-bottom: 70px;
+}
+
+.navbar-brand{
+
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: 22px;
+}
+
+footer{
+
+    color:white;   
+    position: absolute;
+    position: fixed;
+    bottom:0px;
+    padding-left: 45%;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    
+
+}
+
+.card-body{
+
+    height: 450px;
+    width: 350px;
+    
+   
+}
+#e-t {
+
+    margin-top: 30px;
+    margin-left: 37%;
+
+}
+
+#f1{
+    padding-bottom: 20px;
+}
+
+#card-slika{
+
+    height: 400px;
+    width: 310px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+}
+
+.card {
+
+    margin-top:30px;
+    margin-left: 25%;
+   
+}
+
+h2{
+    text-align: center;
+    padding: 30px;
+}
+
+.table, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        border-spacing: 0;
+       
+    }
+    
+ table{
+
+        margin-top: 50px;
+    }
+
+    #font-knjiga{
+        font-size: 14pt;
+    }
+
+    #btn-reg{
+
+        margin-left: 64%;
+    }
+
+    #href-1 {
+
+        color:black;
+    }
+
+    #href-1:hover{
+        color:rgb(4, 4, 102);
+    }

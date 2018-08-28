@@ -1,0 +1,89 @@
+{% extends '_global/main.html' %}
+
+
+{% block main%}
+<h2>Dodaj knjigu</h2>
+<form method="post" enctype="multipart/form-data">
+<div class="container">
+
+<div class="col-md-8 mx-auto">
+    <div class="form-group row">
+         <label for="naslov" class="col-sm-2 col-form-label">Naslov:</label>
+             <div class="col-sm-10">
+                <input type="text" class="form-control" name="naslov" id="naslov" placeholder="Naslov">
+            </div>
+    </div>
+
+    <div class="form-group row">
+          <label for="autor" class="col-sm-2 col-form-label">Autor:</label>
+            <div class="col-sm-10">
+                 <input type="text" class="form-control" id="autor" name="autor" placeholder="Autor">
+            </div>
+    </div>
+
+    <div class="form-group row">
+         <label for="zanr" class="col-sm-2 col-form-label">Zanr:</label>
+             <div class="col-sm-10">
+                 <select name="zanr" id="zanr">
+
+                     <option value=""></option>
+                     <option value="Roman">Roman</option>
+                     <option value="Istorija">Istorija</option>
+                     <option value="Nauka">Nauka</option>
+                     <option value="Drama">Drama</option>
+                     <option value="Filozofija">Filozofija</option>
+                     <option value="Filozofija">Fanstazija</option>
+
+
+                 </select>
+            </div>
+    </div>
+
+
+    <div class="form-group row">
+            <label for="status" class="col-sm-2 col-form-label">Status:</label>
+                <div class="col-sm-10">
+                    <select name="status" id="status">
+   
+                        <option value=""></option>
+                        <option value="Procitano">Procitano</option>
+                        <option value="Trenutno se cita">Trenutno se cita</option>
+                        <option value="Neprocitano">Neprocitano</option>
+                        <option value="Napusteno">Napusteno</option>  
+   
+                    </select>
+               </div>
+       </div>
+
+    <div class="form-group row">
+      <label for="citat" class="col-sm-2 col-form-label">Citat:</label>
+             <div class="col-sm-10">
+              <textarea name="citat" id="citat" cols="30" rows="5"></textarea>
+            </div>
+    </div>
+
+    <div class="form-group row">
+            <label for="komentar" class="col-sm-2 col-form-label">Komentar:</label>
+                   <div class="col-sm-10">
+                    <textarea name="komentar" id="komentar" cols="30" rows="5"></textarea>
+                  </div>
+          </div>
+
+    <div class="form-group row">
+        <label for="slika" class="col-sm-2 col-form-label">Slika:</label>
+        <div class="col-sm-10">
+          <input type="file" class="form-control" id="slika" selected="selected" name="slika">
+        </div>
+      </div>
+
+      <div class="form-group">
+           
+            <button class="btn btn-sm btn-secondary float-right">Dodaj Knjigu</button>
+          </div>
+
+    </div>
+</div>
+</form>
+
+
+{% endblock %}

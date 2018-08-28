@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>Biblioteka</title>
+
+
+        <link rel="stylesheet" href="{{BASE}}assets/css/main.css">
+        <link rel="stylesheet" href="{{BASE}}assets/css/bootstrap.css">
+        <link rel="stylesheet" href="{{BASE}}assets/js/bootstrap.js">
+
+    </head>
+
+    <body>
+       
+            <nav class="navbar navbar-dark" id="navbar-main">
+                <div class="container-fluid">
+
+                      
+
+                    <ul>
+                       
+                        <a class="navbar-brand" href="{{BASE}}">Biblioteka</a>  
+                        
+                        {% if korisnici.korisnicko_ime != '' %}
+                        <a class="navbar-brand" href="{{BASE}}dodaj">Dodaj Knjigu</a>                  
+                        <a class="navbar-brand" href="{{BASE}}pogledaj">Pogledaj sve svoje knjige</a>                  
+
+                    
+             
+                    {% else %}
+
+                    {% endif %}
+                </ul>
+
+
+                <ul class="float-right">
+
+                    {% if korisnici.korisnicko_ime != '' %}
+                       
+                                       
+                        <a class="navbar-brand" style="margin-left: 180%;" href="{{BASE}}auth/logout">Izloguj se!</a> 
+                    {% else %}
+                    <div>
+                    <a class="navbar-brand" href="{{BASE}}auth/log">Logovanje</a>    
+                    <a class="navbar-brand" href="{{BASE}}auth/reg">Registracija</a> 
+                        </div>
+                    {% endif %}
+
+                    
+                </ul>
+
+                {% if korisnici.korisnicko_ime != '' %}
+
+                <form class="form-inline" method="post" action="{{ BASE }}knjige/pretraga">
+                    <input class="form-control mr-sm-2" type="search" name="pretraga" minlength="2" placeholder="Pretraga" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Pretrazi</button>
+                  </form>
+
+                  {% else %}
+
+                  {% endif %}
+
+                </div>
+                  
+               
+             </nav>
+
+
+
+        {% block main %}
+
+        <main>
+       </main>
+        {% endblock %}
+
+        <footer>
+
+              &copy; 2018 - Biblioteka
+              
+        </footer>
+ 
+    </body>
+</html>

@@ -1,0 +1,9 @@
+PRIVATNA BIBLIOTEKA
+
+
+1. Register - Login.
+2. Kada se uloguje korisnik, treba da moze da doda knjige i da ihsvrstava po statusu. CRUD
+3. Uz svaku knjigu moze sebi da doda i komentar.
+4. Svrstavanje po oceni, naslovu, autoru itd.
+5. Logout.
+

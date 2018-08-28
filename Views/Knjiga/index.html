@@ -1,0 +1,40 @@
+{% extends "_global/main.html" %}
+
+
+{% block main %}
+
+
+<div class="card col-md-6" id="card-grid">
+    
+       
+        <div class="card-header mx-auto">
+              <b>{{knjiga.naslov }} - {{knjiga.autor}}</b>
+        </div>
+
+
+        <div class="row">
+            <div class="card-body col-md-6"><img src="{{knjiga.slika}}" alt="img" id="card-slika"></div> 
+            <div class="card-body col-md-6">
+
+                <input type="hidden" value="{{knjiga.knjige_id}}" name="id" id="id">
+
+                <div id="font-knjiga">
+                    <div>Naslov: {{knjiga.naslov}}</div>
+                    <div>Autor: {{knjiga.autor}}</div>
+                    <div>Zanr: {{knjiga.zanr}}</div>
+                    <div>Komentar: {{knjiga.komentar}}</div>
+                    <div>Status: {{knjiga.status}}</div><br>
+                    
+                    <div>Citat: "{{knjiga.citat}}"</div>
+
+                </div>
+            </div> 
+        </div>
+
+        <div class="card-footer"><a href="{{BASE}}knjiga/izmeni/{{knjiga.knjige_id}}"><button class="btn btn-sm btn-secondary float-right">Izmeni podatke</button></a></div> 
+       
+
+</div> 
+
+
+    {% endblock %}

@@ -1,0 +1,71 @@
+{% extends '_global/main.html' %}
+
+
+{% block main%}
+<div class="container">
+    <div class="col-md-12">
+
+    <div class="row">
+
+  
+        {% if knjige is empty %}
+
+        <h3 id="e-t">Nema dodatih knjiga</h3>
+
+        {% else %}
+
+     
+
+        <table class="table table-striped">
+            <thead class="thead-dark">
+              <tr>
+                <th>#</th>
+                <th>Id</th>
+                <th>Naslov</th>
+                <th>Autor</th>
+                <th>Zanr</th>
+                <th>Status</th>
+                <th></th>
+
+
+              </tr>
+            </thead>
+            <tbody>
+               
+            {% for knjiga in knjige %}
+           
+
+              <tr>
+                
+                <td class="col-1">
+                  <a class="btn btn-sm btn-secondary toolbar" href="{{BASE}}pogledaj/knjiga/{{knjiga.knjige_id}}">Pogledaj detaljnije</a>
+                
+                </td>
+              
+                <td>{{knjiga.knjige_id}}</td>
+
+                <td>{{knjiga.naslov}}</td>
+                <td>{{knjiga.autor}}</td>
+                <td>{{knjiga.zanr}}</td>   
+                <td>{{knjiga.status}}</td>          
+                <td> <a class="btn btn-sm btn-light" href="{{BASE}}obrisi/knjige/{{knjiga.knjige_id}}">Obrisi Knjigu</a>
+                  </td>
+
+              </tr>
+
+            {% endfor %}
+            
+            </tbody>
+          </table>
+
+          {% endif %}
+         
+
+</div>
+
+</div>
+
+</div>
+
+
+{% endblock %}
