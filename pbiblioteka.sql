@@ -43,8 +43,8 @@ CREATE TABLE `itachi_knjige` (
 --
 
 INSERT INTO `itachi_knjige` (`knjige_id`, `autor`, `naslov`, `zanr`, `citat`, `slika`, `korisnicko_ime`, `komentar`, `status`) VALUES
-(1, 'Lav Nikolajevic Tolstoj', 'Rat i Mir', 'Roman', 'Osobu koja ti je draga mozes voleti covecijom ljubavlju, ali neprijatelj se jedino moze voleti ljubavlju koja je bozija. ', 'http://localhost/1908/assets/img/Rat i Mir.jpg', 'Itachi', 'Nema komentara.', 'Procitano'),
-(2, 'Dzordz Orvel', '1984', 'Filozofija', 'Rat je Mir, Sloboda je Ropstvo, Neznanje je Moc.', 'http://localhost/1908/assets/img/1984.jpg', 'Itachi', 'Knjiga o zamisljenom totalitarnom drustvu koje ocekuje ljudsku rasu u buducnosti.', 'Procitano');
+(1, 'Lav Nikolajevic Tolstoj', 'Rat i Mir', 'Roman', 'Osobu koja ti je draga mozes voleti covecijom ljubavlju, ali neprijatelj se jedino moze voleti ljubavlju koja je bozija. ', 'http://localhost/Home-Library/assets/img/Rat i Mir.jpg', 'Itachi', 'Nema komentara.', 'Procitano'),
+(2, 'Dzordz Orvel', '1984', 'Filozofija', 'Rat je Mir, Sloboda je Ropstvo, Neznanje je Moc.', 'http://localhost/Home-Libary/assets/img/1984.jpg', 'Itachi', 'Knjiga o zamisljenom totalitarnom drustvu koje ocekuje ljudsku rasu u buducnosti.', 'Procitano');
 
 -- --------------------------------------------------------
 
