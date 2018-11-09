@@ -42,7 +42,7 @@
 
 			$this->izvuciIzSesije();
 
-				$uploadPath = '/var/www/html/1908/assets/img/';
+				$uploadPath = '/var/www/html/Home-Library/assets/img/';
 				$slika_upload = $uploadPath . basename($_FILES['slika']['name']);
 				
 				$korisnici_id = intval($this->getSession()->get('korisnici_id'));
@@ -67,7 +67,7 @@
 			
 				} else {
 
-					$slika = 'http://localhost/1908/assets/img/' . $_FILES['slika']['name'];
+					$slika = 'http://localhost/Home-Library/assets/img/' . $_FILES['slika']['name'];
 					move_uploaded_file($_FILES['slika']['tmp_name'], $slika_upload);															
 					
 				}
