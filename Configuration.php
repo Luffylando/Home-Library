@@ -5,9 +5,9 @@
 		const BASE = 'http://localhost/Home-Library/';
 
 		const DB_HOST = '127.0.0.1';
-		const DB_USER = 'baza';
-		const DB_PASS = 'indijanac';
-		const DB_NAME = 'pbiblioteka';
+		const DB_USER = 'DB USER';
+		const DB_PASS = 'DB PASS';
+		const DB_NAME = 'DB NAME';
 
 
 		const SESSION_STORAGE = '\\App\\Core\\Session\\FileSessionStorage';
